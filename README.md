@@ -1,2 +1,2 @@
 # techstrome
-*rest api with peewee orm*  
+*rest api with peewee orm and fastapi*  
