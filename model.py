@@ -20,7 +20,7 @@ class Admin(BaseModel):
     first_name = peewee.CharField(max_length=55)
     last_name = peewee.CharField(max_length=55)
     email = peewee.CharField(unique=True)
-    password = peewee.CharField(max_length=10)
+    password = peewee.CharField()
     contact_number = peewee.CharField(max_length=12)
 
 class CampsiteOwner(BaseModel):
@@ -28,7 +28,7 @@ class CampsiteOwner(BaseModel):
     first_name = peewee.CharField(max_length=55)
     last_name = peewee.CharField(max_length=55)
     email = peewee.CharField(unique=True)
-    password = peewee.CharField(max_length=10)
+    password = peewee.CharField()
     contact_number = peewee.CharField(max_length=12)
 
 class Camper(BaseModel):
@@ -36,7 +36,7 @@ class Camper(BaseModel):
     first_name = peewee.CharField(max_length=55)
     last_name = peewee.CharField(max_length=55)
     email = peewee.CharField(unique=True)
-    password = peewee.CharField(max_length=10)
+    password = peewee.CharField()
     contact_number = peewee.CharField(max_length=12)
     address = peewee.CharField()
     age = peewee.SmallIntegerField()
@@ -44,7 +44,7 @@ class Camper(BaseModel):
 class Guilder(BaseModel):
     guilder_id = peewee.AutoField()
     name = peewee.CharField(max_length=55)
-    charge_per_hour = peewee.SmallIntegerField()
+    charge_per_hour = peewee.DecimalField()
     contact_number = peewee.CharField(max_length=12)
     gender = peewee.CharField(max_length=10)
     experience = peewee.TextField()
