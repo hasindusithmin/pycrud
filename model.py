@@ -1,10 +1,8 @@
 import peewee
-from dotenv import load_dotenv
 import os
 import datetime
 from playhouse.shortcuts import model_to_dict
 # ------------
-load_dotenv()
 db = peewee.PostgresqlDatabase(
     'postgres',
     user='postgres',
