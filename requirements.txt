@@ -3,3 +3,4 @@ uvicorn
 peewee
 psycopg-binary
 python-dotenv
+gunicorn
